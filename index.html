@@ -66,6 +66,20 @@
             max-width: 100%;
             height: auto;
         }
+
+                /* Estilo para la cuadrícula de imágenes en la sección "EDUCACION" */
+        #educacion .imagen-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        /* Estilo para las imágenes en la sección "PROYECTOS" */
+        #educacion .imagen-grid img {
+            max-width: 100%;
+            height: auto;
+        }
+        
     </style>
 </head>
 <body>
@@ -96,6 +110,20 @@
             <section id="educacion" class="seccion">
                 <h2>EDUCACIÓN</h2>
                 <p>Mi educación formal comenzó en 2012 cuando ingresé a la escuela primaria en el colegio Padre Francois Delatte, donde pasé gran parte de mi vida académica hasta el tercer año de secundaria en 2020. Con el objetivo de mejorar mi educación, continué mis estudios en el colegio Mendel durante el cuarto y quinto año de secundaria en 2021 y 2022. Actualmente, estoy en el segundo semestre de la carrera de Ciencia de la Computación en la Universidad Católica San Pablo.</p>
+                <div class="imagen-grid">
+                    <div>
+                        <img src="educacionfrancois1.jpeg" alt="educacionfrancois1">
+                    </div>
+                    <div>
+                        <img src="educacionfrancois2.jpeg" alt="educacionfrancois2">
+                    </div>
+                    <div>
+                        <img src="educacionmendel.jpg" alt="educacionmendel">
+                    </div>
+                    <div>
+                        <img src="educacionsanpablo.jpeg" alt="educacionsanpablo">
+                    </div>
+                </div>
             </section>
             <section id="proyectos" class="seccion">
                 <h2>PROYECTOS</h2>
