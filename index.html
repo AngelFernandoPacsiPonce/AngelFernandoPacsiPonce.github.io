@@ -10,80 +10,98 @@
             color: #fff; /* Este código establece el color del texto en blanco */
             font-family: Arial, sans-serif; /* Puedes cambiar la fuente según tus preferencias */
             display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            background-color: #222;
+            padding: 50px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #content-container {
+            display: flex;
         }
 
         #sidebar {/*PARTE LATERAL */
-            background-color: #00BFFF; /* Cambio a azul celeste para la barra lateral */
-            width: 200px; /* Ancho de la barra lateral */
-            padding: 20px; /* Espacio interno en la barra lateral */
+            background-color: #333; /* COLOR DEL LADO LATERAL */
+            width: 200px; /* ANCHO */
+            padding: 20px; /* ESPACIO ENTRE ESTOS */
         }
 
         #sidebar a {
             display: block;
-            color: #fff; /* Color del texto de los botones */
+            color: #fff; /* COLOR BOTONES LATERALES */
             text-decoration: none;
-            margin-bottom: 10px; /* Espacio entre botones */
+            margin-bottom: 40px; /* ESPACIO ENTRE LOS BOTONES LATERALES */
         }
 
         #sidebar a:hover {
-            background-color: #555; /* Cambio de color al pasar el cursor sobre los botones */
+            background-color: #02D0F9; /* CAMBIO DE COLOR AL PASAR SOBRE ESTOS*/
         }
 
         #content {
-            flex: 1; /* El contenido principal se expande para ocupar el espacio restante */
-            padding: 20px; /* Espacio interno en el contenido principal */
-            background-color: #333; /* Cambio a gris medio oscuro para el contenido principal */
+            flex: 1; /* EXPASION DEL CONT. */
+            padding: 20px; /* ESPACIO EN EL TEXTO  */
+            background-color: #222; /* COLOR FUERA DEL FONDO DEL TEXTO */
         }
 
         /* Color de fondo para las secciones */
         .seccion {/*PARTE DEL TEXTO */
-            background-color: #3bc9f9; /* Azul celeste para las secciones */
-            padding: 10px; /* Espacio interno en las secciones */
-            display: none; /* Inicialmente ocultar todas las secciones */
+            background-color: #333; /* COLOR DE LOS BOTONES */
+            padding: 30px; /* ESPACIO ENTRE BOTONES */
+            display: none; /* PA OCULTAR A LOS BOTONES AL INICIO*/
         }
     </style>
 </head>
 <body>
-    <div id="sidebar">
-        <!-- Botones de navegación con nombres actualizados -->
-        <a href="#inicio">INICIO</a>
-        <a href="#acerca-de-mi">ACERCA DE MI</a>
-        <a href="#educacion">EDUCACIÓN</a>
-        <a href="#proyectos">PROYECTOS</a>
-        <a href="#contacto">CONTACTO</a>
-        <a href="#perfiles">PERFILES</a>
-        <a href="#metas">METAS</a>
+    <div id="header">
+        Fernando Ponce
     </div>
-    <div id="content">
-        <!-- Contenido principal -->
-        <section id="inicio" class="seccion">
-            <h2>INICIO</h2>
-            <p>¡Bienvenido a mi página web! Soy Angel Fernando Pacsi Ponce, estudiante de Ciencia de la Computación de 18 años. Aquí comparto mi experiencia en esta carrera y mi deseo de compartir y seguir aprendiendo conocimientos sobre programación, desarrollo y tecnología.</p>
-        </section>
-        <section id="acerca-de-mi" class="seccion">
-            <h2>ACERCA DE MI</h2>
-            <p>Mi interés en el mundo de la computación comenzó a temprana edad, cuando recibí mi primera computadora a los 7 años. Esta experiencia inicial me llevó a explorar y aprender por mi cuenta sobre el funcionamiento de las computadoras. A medida que crecía, me volví autodidacta en la resolución de problemas técnicos y ayudaba a amigos y familiares cuando se enfrentaban a desafíos similares. Mi curiosidad y amor por la tecnología me llevaron a considerar una carrera en Ciencia de la Computación.</p>
-        </section>
-        <section id="educacion" class="seccion">
-            <h2>EDUCACIÓN</h2>
-            <p>Mi educación formal comenzó en 2012 cuando ingresé a la escuela primaria en el colegio Padre Francois Delatte, donde pasé gran parte de mi vida académica hasta el tercer año de secundaria en 2020. Con el objetivo de mejorar mi educación, continué mis estudios en el colegio Mendel durante el cuarto y quinto año de secundaria en 2021 y 2022. Actualmente, estoy en el segundo semestre de la carrera de Ciencia de la Computación en la Universidad Católica San Pablo.</p>
-        </section>
-        <section id="proyectos" class="seccion">
-            <h2>PROYECTOS</h2>
-            <p>En mi primer semestre universitario, emprendí la creación de un videojuego llamado 'Undead Frenzy', programado en Python. Aunque el proyecto no alcanzó las expectativas que tenía, fue una valiosa experiencia de aprendizaje en mi viaje hacia la maestría en programación y desarrollo.</p>
-        </section>
-        <section id="contacto" class="seccion">
-            <h2>CONTACTO</h2>
-            <p>Puedes contactarme a través de mi correo de estudiante: angel.pacsi@edu.ucsp.pe</p>
-        </section>
-        <section id="perfiles" class="seccion">
-            <h2>PERFILES</h2>
-            <p>Mi repositorio en GitHub está disponible en: <a href="https://github.com/AngelFernandoPacsiPonce" target="_blank">https://github.com/AngelFernandoPacsiPonce</a></p>
-        </section>
-        <section id="metas" class="seccion">
-            <h2>METAS</h2>
-            <p>Mi principal meta es completar satisfactoriamente mi carrera en Ciencia de la Computación, adquiriendo un profundo conocimiento en el campo y aprovechando cada oportunidad de aprendizaje que se presente.</p>
-        </section>
+    <div id="content-container">
+        <div id="sidebar">
+            <!-- Botones de navegación con nombres actualizados -->
+            <a href="#inicio">INICIO</a>
+            <a href="#acerca-de-mi">ACERCA DE MI</a>
+            <a href="#educacion">EDUCACIÓN</a>
+            <a href"#proyectos">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="#perfiles">PERFILES</a>
+            <a href="#metas">METAS</a>
+        </div>
+        <div id="content">
+            <!-- Contenido principal -->
+            <section id="inicio" class="seccion">
+                <h2>INICIO</h2>
+                <p>¡Bienvenido a mi página web! Soy Angel Fernando Pacsi Ponce, estudiante de Ciencia de la Computación de 18 años. Aquí comparto mi experiencia en esta carrera y mi deseo de compartir y seguir aprendiendo conocimientos sobre programación, desarrollo y tecnología.</p>
+            </section>
+            <section id="acerca-de-mi" class="seccion">
+                <h2>ACERCA DE MI</h2>
+                <p>"Mi interés en el mundo de la computación comenzó a temprana edad, cuando recibí mi primera computadora a los 7 años. Esta experiencia inicial me llevó a explorar y aprender por mi cuenta sobre el funcionamiento de las computadoras. A medida que crecía, me volví autodidacta en la resolución de problemas técnicos y ayudaba a amigos y familiares cuando se enfrentaban a desafíos similares. Mi curiosidad y amor por la tecnología me llevaron a considerar una carrera en Ciencia de la Computación."</p>
+            </section>
+            <section id="educacion" class="seccion">
+                <h2>EDUCACIÓN</h2>
+                <p>Mi educación formal comenzó en 2012 cuando ingresé a la escuela primaria en el colegio Padre Francois Delatte, donde pasé gran parte de mi vida académica hasta el tercer año de secundaria en 2020. Con el objetivo de mejorar mi educación, continué mis estudios en el colegio Mendel durante el cuarto y quinto año de secundaria en 2021 y 2022. Actualmente, estoy en el segundo semestre de la carrera de Ciencia de la Computación en la Universidad Católica San Pablo."</p>
+            </section>
+            <section id="proyectos" class="seccion">
+                <h2>PROYECTOS</h2>
+                <p>En mi primer semestre universitario, emprendí la creación de un videojuego llamado 'Undead Frenzy', programado en Python. Aunque el proyecto no alcanzó las expectativas que tenía, fue una valiosa experiencia de aprendizaje en mi viaje hacia la maestría en programación y desarrollo.</p>
+            </section>
+            <section id="contacto" class="seccion">
+                <h2>CONTACTO</h2>
+                <p>Puedes contactarme a través de mi correo de estudiante: <a href="mailto:angel.pacsi@edu.ucsp.pe">angel.pacsi@edu.ucsp.pe</a></p>
+            </section>
+            <section id="perfiles" class="seccion">
+                <h2>PERFILES</h2>
+                <p>Mi repositorio en GitHub está disponible en: <a href="https://github.com/AngelFernandoPacsiPonce" target="_blank">https://github.com/AngelFernandoPacsiPonce</a></p>
+            </section>
+            <section id="metas" class="seccion">
+                <h2>METAS</h2>
+                <p>Mi principal meta es completar satisfactoriamente mi carrera en Ciencia de la Computación, adquiriendo un profundo conocimiento en el campo y aprovechando cada oportunidad de aprendizaje que se presente.</p>
+            </section>
+        </div>
     </div>
 
     <script>
