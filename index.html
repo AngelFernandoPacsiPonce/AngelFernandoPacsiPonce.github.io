@@ -6,9 +6,9 @@
     <title>Angel Fernando Pacsi Ponce</title>
     <style>
         body {
-            background-color: #222; /* Este código establece un tono de gris oscuro para el fondo */
-            color: #fff; /* Este código establece el color del texto en blanco */
-            font-family: Arial, sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
         }
@@ -25,34 +25,46 @@
             display: flex;
         }
 
-        #sidebar {/*PARTE LATERAL */
-            background-color: #333; /* COLOR DEL LADO LATERAL */
-            width: 200px; /* ANCHO */
-            padding: 20px; /* ESPACIO ENTRE ESTOS */
+        #sidebar {
+            background-color: #333;
+            width: 200px;
+            padding: 20px;
         }
 
         #sidebar a {
             display: block;
-            color: #fff; /* COLOR BOTONES LATERALES */
+            color: #fff;
             text-decoration: none;
-            margin-bottom: 40px; /* ESPACIO ENTRE LOS BOTONES LATERALES */
+            margin-bottom: 40px;
         }
 
         #sidebar a:hover {
-            background-color: #02D0F9; /* CAMBIO DE COLOR AL PASAR SOBRE ESTOS*/
+            background-color: #02D0F9;
         }
 
         #content {
-            flex: 1; /* EXPASION DEL CONT. */
-            padding: 20px; /* ESPACIO EN EL TEXTO  */
-            background-color: #222; /* COLOR FUERA DEL FONDO DEL TEXTO */
+            flex: 1;
+            padding: 20px;
+            background-color: #222;
         }
 
-        /* Color de fondo para las secciones */
-        .seccion {/*PARTE DEL TEXTO */
-            background-color: #333; /* COLOR DE LOS BOTONES */
-            padding: 30px; /* ESPACIO ENTRE BOTONES */
-            display: none; /* PA OCULTAR A LOS BOTONES AL INICIO*/
+        .seccion {
+            background-color: #333;
+            padding: 30px;
+            display: none;
+        }
+
+        /* Estilo para la cuadrícula de imágenes en la sección "PROYECTOS" */
+        #proyectos .imagen-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        /* Estilo para las imágenes en la sección "PROYECTOS" */
+        #proyectos .imagen-grid img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -66,7 +78,7 @@
             <a href="#inicio">INICIO</a>
             <a href="#acerca-de-mi">ACERCA DE MI</a>
             <a href="#educacion">EDUCACIÓN</a>
-            <a href"#proyectos">PROYECTOS</a>
+            <a href="#proyectos">PROYECTOS</a>
             <a href="#contacto">CONTACTO</a>
             <a href="#perfiles">PERFILES</a>
             <a href="#metas">METAS</a>
@@ -83,11 +95,25 @@
             </section>
             <section id="educacion" class="seccion">
                 <h2>EDUCACIÓN</h2>
-                <p>Mi educación formal comenzó en 2012 cuando ingresé a la escuela primaria en el colegio Padre Francois Delatte, donde pasé gran parte de mi vida académica hasta el tercer año de secundaria en 2020. Con el objetivo de mejorar mi educación, continué mis estudios en el colegio Mendel durante el cuarto y quinto año de secundaria en 2021 y 2022. Actualmente, estoy en el segundo semestre de la carrera de Ciencia de la Computación en la Universidad Católica San Pablo."</p>
+                <p>Mi educación formal comenzó en 2012 cuando ingresé a la escuela primaria en el colegio Padre Francois Delatte, donde pasé gran parte de mi vida académica hasta el tercer año de secundaria en 2020. Con el objetivo de mejorar mi educación, continué mis estudios en el colegio Mendel durante el cuarto y quinto año de secundaria en 2021 y 2022. Actualmente, estoy en el segundo semestre de la carrera de Ciencia de la Computación en la Universidad Católica San Pablo.</p>
             </section>
             <section id="proyectos" class="seccion">
                 <h2>PROYECTOS</h2>
                 <p>En mi primer semestre universitario, emprendí la creación de un videojuego llamado 'Undead Frenzy', programado en Python. Aunque el proyecto no alcanzó las expectativas que tenía, fue una valiosa experiencia de aprendizaje en mi viaje hacia la maestría en programación y desarrollo.</p>
+                <div class="imagen-grid">
+                    <div>
+                        <img src="undeadfrenzy1.png" alt="Undead Frenzy 1">
+                    </div>
+                    <div>
+                        <img src="undeadfrenzy2.png" alt="Undead Frenzy 2">
+                    </div>
+                    <div>
+                        <img src="undeadfrenzy3.png" alt="Undead Frenzy 3">
+                    </div>
+                    <div>
+                        <img src="undeadfrenzy4.png" alt="Undead Frenzy 4">
+                    </div>
+                </div>
             </section>
             <section id="contacto" class="seccion">
                 <h2>CONTACTO</h2>
